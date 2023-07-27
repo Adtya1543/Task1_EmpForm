@@ -2,21 +2,24 @@ const mongoose = require("mongoose");
 
 const employeeSchema =  new mongoose.Schema({
     fullname : {
-        type: String,
+        type: String
         // required: true
     },
+    gender: {
+        type: String
+    },
     emailAddress : {
-        type: String,
+        type: String
         // required: true,
         // unique: true
     },
     phoneNumber : {
-        type: Number,
+        type: Number
         // required: true,
         // unique: true
     },
     permanentaddress :{
-        type: String,
+        type: String
     },
     currentAddress :{
         type: String
@@ -25,11 +28,11 @@ const employeeSchema =  new mongoose.Schema({
         type: Number
     },
     jobTitle : {
-        type:String,
+        type:String
         // required: true
     },
     department : {
-        type:String,
+        type:String
         // required: true
     },
     salary : {
@@ -44,10 +47,10 @@ const employeeSchema =  new mongoose.Schema({
         // required: true 
     },
     experience : {
-        type: Number,
+        type: Number
         // required: true
     }
-})
+});
 
 const Form = new mongoose.model("Form",employeeSchema);
 
