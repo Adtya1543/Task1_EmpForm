@@ -18,7 +18,7 @@ const employeeSchema =  new mongoose.Schema({
         // required: true,
         // unique: true
     },
-    permanentaddress :{
+    permanentAddress :{
         type: String
     },
     currentAddress :{
@@ -43,7 +43,7 @@ const employeeSchema =  new mongoose.Schema({
         type: Number
     },
     panNumber : {
-        type: String,
+        type: String
         // required: true 
     },
     experience : {
