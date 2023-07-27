@@ -30,12 +30,12 @@ app.post("/submit", async (req,res) => {
         //     return res.status(422).json({error : "Email Already exists"});
         // }        
 
-        const { fullname, emailAddress, gender, phoneNumber, permanentAddress,currentAddress,dateOfJoining,jobTitle,department,salary,aadharNumber,panNumber,experience } = req.body;
+        const { fullname, gender, emailAddress, phoneNumber, permanentAddress, currentAddress, dateOfJoining, jobTitle, department, salary, aadharNumber, panNumber, experience } = req.body;
 
         const employeeData = new Form({
             fullname,
-            emailAddress, 
-            gender,
+            gender, 
+            emailAddress,
             phoneNumber,
             permanentAddress,
             currentAddress,
